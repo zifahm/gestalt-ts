@@ -72,12 +72,4 @@ The following outlines our release process:
 
 ## Typescript Support
 
-Install the [DefinitelyTyped](https://www.npmjs.com/package/@types/gestalt) definitions.
-
-### Install
-
-`npm i --save @types/gestalt`
-
-or
-
-`yarn add @types/gestalt`
+Comes with typings.
