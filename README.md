@@ -12,7 +12,7 @@ or
 
 ## Install
 
-`npm i gestalt --save` or `yarn add gestalt`
+`npm i @zifahm/gestalt-ts --save` or `yarn add @zifahm/gestalt-ts`
 
 ## Usage
 

@@ -58,6 +58,7 @@
   },
   "bugs": {
     "url": "https://github.com/zifahm/gestalt-ts/issues"
-  }
+  },
+  "keywords": ["gestalt typescript"]
 
 }
