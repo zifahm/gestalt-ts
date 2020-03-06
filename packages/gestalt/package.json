@@ -5,7 +5,6 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/zifahm/gestalt-ts",
   "description": "A set of React UI components which enforce Pinterest’s design language with typescript typings",
-"publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "dist/gestalt.js",
   "typings": "dist/index.d.ts",
   "jsnext:main": "dist/gestalt.es.js",
