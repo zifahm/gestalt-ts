@@ -12,6 +12,16 @@
 
 </details>
 
+## 1.16.0 (Mar 6, 2020)
+
+### Minor
+
+- Tabs: Add white background, backgrounds for active and hover/focus states, 60px min width (#731)
+
+### Patch
+
+- Internal: Detect and remove unused eslint disables (#723)
+
 ## 1.15.0 (Mar 5, 2020)
 
 ### Minor
