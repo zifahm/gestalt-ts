@@ -291,7 +291,7 @@ export interface HeaderProps {
     size?: 'xs' |'sm' | 'md' | 'lg'|'xl';
     smSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
     mdSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
-    ldSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
+    lgSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
     truncate?: boolean;
 }
 
