@@ -1,6 +1,6 @@
 {
   "name": "@zifahm/gestalt-ts",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "license": "Apache-2.0",
   "homepage": "https://github.com/zifahm/gestalt-ts",
   "description": "A set of React UI components which enforce Pinterest’s design language with typescript typings",
@@ -51,13 +51,14 @@
     "not IE < 11",
     "not <1%"
   ],
-"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/zifahm/gestalt-ts.git"
   },
   "bugs": {
     "url": "https://github.com/zifahm/gestalt-ts/issues"
   },
-  "keywords": ["gestalt typescript"]
-
+  "keywords": [
+    "gestalt typescript"
+  ]
 }
