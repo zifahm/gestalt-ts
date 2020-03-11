@@ -288,7 +288,10 @@ export interface HeaderProps {
         | 'white';
     id?: string;
     overflow?: 'normal' | 'breakWord';
-    size?: 'sm' | 'md' | 'lg';
+    size?: 'xs' |'sm' | 'md' | 'lg';
+    smSize?:'xs' |'sm' | 'md' | 'lg';
+    mdSize?:'xs' |'sm' | 'md' | 'lg';
+    ldSize?:'xs' |'sm' | 'md' | 'lg';
     truncate?: boolean;
 }
 
@@ -794,7 +797,10 @@ export interface TextProps {
     italic?: boolean;
     leading?: 'short' | 'tall';
     overflow?: 'normal' | 'breakWord';
-    size?: 'sm' | 'md' | 'lg';
+    size?:'xs'| 'sm' | 'md' | 'lg' | 'xl';
+    smSize?: 'xs'| 'sm' | 'md' | 'lg' | 'xl';
+    mdSize?:'xs'|  'sm' | 'md' | 'lg' | 'xl';
+    lgSize?:'xs'|  'sm' | 'md' | 'lg' | 'xl';
     truncate?: boolean;
     weight?: 'bold' | 'normal';
 }
