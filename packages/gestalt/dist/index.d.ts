@@ -288,10 +288,10 @@ export interface HeaderProps {
         | 'white';
     id?: string;
     overflow?: 'normal' | 'breakWord';
-    size?: 'xs' |'sm' | 'md' | 'lg';
-    smSize?:'xs' |'sm' | 'md' | 'lg';
-    mdSize?:'xs' |'sm' | 'md' | 'lg';
-    ldSize?:'xs' |'sm' | 'md' | 'lg';
+    size?: 'xs' |'sm' | 'md' | 'lg'|'xl';
+    smSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
+    mdSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
+    ldSize?:'xs' |'sm' | 'md' | 'lg'|'xl';
     truncate?: boolean;
 }
 
