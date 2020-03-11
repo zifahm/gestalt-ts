@@ -1,6 +1,6 @@
 {
   "name": "@zifahm/gestalt-ts",
-  "version": "1.16.0",
+  "version": "1.18.0",
   "license": "Apache-2.0",
   "homepage": "https://github.com/zifahm/gestalt-ts",
   "description": "A set of React UI components which enforce Pinterest’s design language with typescript typings",
@@ -18,8 +18,8 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
   "scripts": {
     "build": "rollup -c rollup.config.js",
@@ -30,14 +30,14 @@
   },
   "devDependencies": {
     "blueimp-md5": "^2.12.0",
-    "caniuse-lite": "^1.0.30001028",
+    "caniuse-lite": "^1.0.30001033",
     "cssnano": "^4.1.10",
     "gzip-size": "^5.1.1",
     "postcss": "^7.0.27",
     "postcss-cssnext": "^3.1.0",
     "postcss-modules": "^1.5.0",
     "rollup": "^1.31.1",
-    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-filesize": "^6.2.1",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",

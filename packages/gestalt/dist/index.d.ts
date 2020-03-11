@@ -345,6 +345,8 @@ export type Icons =
     | 'compose'
     | 'crop'
     | 'dash'
+    | 'conversion-tag'
+    | 'credit-card'
     | 'directional-arrow-left'
     | 'directional-arrow-right'
     | 'download'
