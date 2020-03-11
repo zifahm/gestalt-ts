@@ -26,7 +26,7 @@ exports[`Text renders 1`] = `
 
 exports[`Text size sm adds the small size class 1`] = `
 <div
-  className="Text fontSize1 darkGray alignLeft breakWord fontWeightNormal"
+  className="Text fontSize2 darkGray alignLeft breakWord fontWeightNormal"
 />
 `;
 

@@ -10,9 +10,4 @@ describe('FormErrorMessage', () => {
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
-  it('with no errorMessage', () => {
-    const tree = create(<FormErrorMessage id="test" />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });

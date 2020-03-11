@@ -1,7 +1,7 @@
 // @flow
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 import colors from './Colors.css';
 import styles from './Heading.css';
 import typography from './Typography.css';
@@ -30,19 +30,26 @@ type Props = {|
   id?: string,
   overflow?: 'normal' | 'breakWord',
   size?: 'sm' | 'md' | 'lg',
+  smSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  lgSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  mdSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
   truncate?: boolean,
 |};
 
 const defaultHeadingLevels = {
-  sm: 3,
-  md: 2,
-  lg: 1,
+  xs: 5,
+  sm: 4,
+  md: 3,
+  lg: 2,
+  xl: 1,
 };
 
 const SIZE_SCALE: { [size: ?string]: number } = {
-  sm: 1,
-  md: 2,
-  lg: 3,
+  xs: 1,
+  sm: 2,
+  md: 3,
+  lg: 4,
+  xl: 5,
 };
 
 export default function Heading(props: Props) {
@@ -53,6 +60,9 @@ export default function Heading(props: Props) {
     id = null,
     overflow = 'breakWord',
     size = 'lg',
+    smSize,
+    lgSize,
+    mdSize,
     truncate = false,
   } = props;
 
@@ -60,6 +70,9 @@ export default function Heading(props: Props) {
     styles.Heading,
     styles[`fontSize${SIZE_SCALE[size]}`],
     colors[color],
+    smSize && styles[`smFontSize${SIZE_SCALE[smSize]}`],
+    mdSize && styles[`mdFontSize${SIZE_SCALE[mdSize]}`],
+    lgSize && styles[`lgFontSize${SIZE_SCALE[lgSize]}`],
     overflow === 'breakWord' && typography.breakWord,
     truncate && typography.truncate
   );
@@ -100,5 +113,8 @@ Heading.propTypes = {
   id: PropTypes.string,
   overflow: PropTypes.oneOf(['normal', 'breakWord']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  smSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  mdSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  lgSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   truncate: PropTypes.bool,
 };

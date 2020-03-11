@@ -5,7 +5,7 @@ exports[`FormErrorMessage with errorMessage 1`] = `
   className="box marginTop2"
 >
   <div
-    className="Text fontSize1 red alignLeft breakWord fontWeightNormal"
+    className="Text fontSize2 red alignLeft breakWord fontWeightNormal"
   >
     <span
       id="test-error"
@@ -21,12 +21,12 @@ exports[`FormErrorMessage with no errorMessage 1`] = `
   className="box marginTop2"
 >
   <div
-    className="Text fontSize1 red alignLeft breakWord fontWeightNormal"
+    className="Text fontSize2 red alignLeft breakWord fontWeightNormal"
   >
     <span
       id="test-error"
     >
-      
+
     </span>
   </div>
 </div>

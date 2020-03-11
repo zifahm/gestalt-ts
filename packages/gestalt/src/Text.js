@@ -1,16 +1,18 @@
 // @flow
 
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'classnames';
+import PropTypes from 'prop-types';
+import * as React from 'react';
 import colors from './Colors.css';
 import styles from './Text.css';
 import typography from './Typography.css';
 
 const SIZE_SCALE: { [size: ?string]: number } = {
-  sm: 1,
-  md: 2,
-  lg: 3,
+  xs: 1,
+  sm: 2,
+  md: 3,
+  lg: 4,
+  xl: 5,
 };
 
 type Props = {|
@@ -38,6 +40,9 @@ type Props = {|
   italic?: boolean,
   overflow?: 'normal' | 'breakWord',
   size?: 'sm' | 'md' | 'lg',
+  smSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  mdSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  lgSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
   leading?: 'tall' | 'short',
   truncate?: boolean,
   weight?: 'bold' | 'normal',
@@ -51,17 +56,26 @@ export default function Text({
   inline = false,
   italic = false,
   overflow = 'breakWord',
-  size = 'lg',
+  size = 'md',
+  smSize,
+  mdSize,
+  lgSize,
   leading,
   truncate = false,
   weight = 'normal',
   __dangerouslyIncreaseLineHeight = false,
 }: Props) {
   const scale = SIZE_SCALE[size];
+  const smScale = SIZE_SCALE[smSize];
+  const mdScale = SIZE_SCALE[mdSize];
+  const lgScale = SIZE_SCALE[lgSize];
 
   const cs = cx(
     styles.Text,
     styles[`fontSize${scale}`],
+    lgSize && styles[`lgFontSize${lgScale}`],
+    mdSize && styles[`mdFontSize${mdScale}`],
+    smSize && styles[`smFontSize${smScale}`],
     color === 'blue' && colors.blue,
     color === 'darkGray' && colors.darkGray,
     color === 'eggplant' && colors.eggplant,
@@ -134,6 +148,9 @@ Text.propTypes = {
   leading: PropTypes.oneOf(['tall', 'short']),
   overflow: PropTypes.oneOf(['normal', 'breakWord']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  mdSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  smSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  lgSize: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
   truncate: PropTypes.bool,
   weight: PropTypes.oneOf(['bold', 'normal']),
 };

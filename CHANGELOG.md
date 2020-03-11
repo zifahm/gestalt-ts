@@ -12,6 +12,13 @@
 
 </details>
 
+## 1.18.1 (Mar 10, 2020)
+
+### Minor
+
+- small, medium, and large size for Text and Heading (smSize, mdSize, lgSize)
+- xs, md, lg, xl font sizes for Text and Heading
+
 ## 1.18.0 (Mar 10, 2020)
 
 ### Minor

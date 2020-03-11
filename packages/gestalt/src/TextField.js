@@ -1,7 +1,7 @@
 // @flow
-import * as React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
+import * as React from 'react';
 import formElement from './FormElement.css';
 import FormErrorMessage from './FormErrorMessage.js';
 import FormHelperText from './FormHelperText.js';
